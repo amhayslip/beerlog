@@ -1,4 +1,14 @@
-Showing A Specific User
+Showing A Specific User and their beers
 
 <h1><%= @user.name %></h1>
+
+Beers...
+<% @user.beers.each do |beer| %>
+<% end %>
+
+
+</br>
+<p> <%= link_to 'New Beer', new_user_beer_path(@user) %> </p>
+
+<%= link_to 'Back', root_path %>
 

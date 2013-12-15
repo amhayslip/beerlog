@@ -1,6 +1,6 @@
 Showing All Beers
 
 <% @beers.each do |beer| %>
-<li> <%= link_to beer.name, beer %> </li>
+<li> <%= link_to beer.name, user_beers_path %> </li>
 <% end %>
 

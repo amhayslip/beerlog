@@ -1,3 +1,11 @@
 Showing a Specific Beer
 
 <h1> <%= @beer.name %> </h1>
+<p> Brewery: <%= @beer.brewery %> </p>
+<p> Location: <%= @beer.location %> </p>
+<p> Style: <%= @beer.style %> </p>
+<p> ABV: <%= @beer.abv %> </p>
+<p> Notes: <%= @beer.notes %> </p>
+
+<%= link_to 'Edit Beer', edit_beer_path %>
+<%= link_to 'Back', root_path %>

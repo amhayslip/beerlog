@@ -34,6 +34,8 @@ end
 
 gem 'hirb'
 
+gem 'brewery_db'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
