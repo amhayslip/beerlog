@@ -1,0 +1,21 @@
+<h1> A New User </h1>
+
+
+<%= form_for @user do |f| %
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+
+  <%= f.label :description%>
+  <%= f.text_field :description%>
+
+
+  <%= f.label :youtube_id%>
+  <%= f.text_field :youtube_id%>
+
+
+
+
+
+  <%= f.submit %>
+<% end %>

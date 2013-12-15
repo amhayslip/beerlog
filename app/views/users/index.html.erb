@@ -1,0 +1,12 @@
+<h1> Users Index </h1>
+
+<% @users.each do |user|  %>
+<h2> <%= link_to user.name, user %> </h2>
+  <h3> Beers </h3>
+  <% user.beers.each do |beer| %>
+  <li> <%= beer.name %> </li>
+  <% end %>
+<% end %>
+
+
+<%= link_to 'New User', new_user_path %>
