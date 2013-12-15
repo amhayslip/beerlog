@@ -1,12 +1,15 @@
 <h1> Users Index </h1>
+<%= link_to 'New User', new_user_path %>
 
 <% @users.each do |user|  %>
-<h2> <%= link_to user.name, user %> </h2>
-  <h3> Beers </h3>
-  <% user.beers.each do |beer| %>
-  <li> <%= beer.name %> </li>
-  <% end %>
+  <h2> <%= link_to user.name, user %> </h2>
+      <h3> Beers </h3>
+      <% user.beers.each do |beer| %>
+      <li> <%= beer.name %> </li>
+      <% end %>
+  <p> <%= link_to 'Edit User', edit_user_path(user) %> </p>
+  <p><%= link_to 'Delete User', user, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
+
 <% end %>
 
 
-<%= link_to 'New User', new_user_path %>
